@@ -32,8 +32,14 @@ function timeCheck(){
         var hour = $(this).parent().attr("id").split("-")[1];
         console.log(hour)
         var currentHour = moment().format("HH");
-        if (hour < currentHour) 
-         {$(this).addClass("past")}
+
+
+if (parseInt(currentHour) > parseInt(hour)) {
+//   console.log('I made it!')
+  $(this).addClass("past")
+}
+        // if (hour < currentHour) 
+        //  {$(this).addClass("past")}
          else if (hour === currentHour)
          {$(this).addClass("present")}
          else 
