@@ -1,4 +1,4 @@
-var date = moment().format("dddd, MMMM Do YYYY, HH:mm a");
+var date = moment().format("dddd, MMMM Do YYYY, hh:mm a");
 console.log(typeof date)
 var currentDay = document.getElementById("currentDay");
 currentDay.textContent=date;
